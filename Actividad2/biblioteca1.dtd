@@ -1,0 +1,37 @@
+<!ELEMENT biblioteca (libros?, periodicos?, revistas?)>
+<!ELEMENT libros (libro+)>
+<!ELEMENT libro (titulo,capitulos+,indice,sinopsis)>
+    <!ATTLIST libro 
+        id ID #REQUIRED
+        tipo_clase (novela|infantil|didactico) #REQUIRED
+        numero_paginas CDATA #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT capitulos (capitulo+)>
+<!ELEMENT capitulo (titulo,contenido)>
+    <!ATTLIST capitulo 
+        id ID #REQUIRED
+        numero_paginas CDATA #REQUIRED>
+<!ELEMENT indice (#PCDATA)>
+<!ELEMENT sinopsis (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+    <!ATTLIST contenido enlace CDATA #REQUIRED>
+<!ELEMENT periodicos (periodico+)>
+<!ELEMENT periodico (secciones_periodico, indice)>
+<!ELEMENT secciones_periodico (seccion_periodico+)>
+<!ELEMENT seccion_periodico (contenido)>
+<!ATTLIST seccion_periodico id ID #REQUIRED
+        numero_paginas CDATA #REQUIRED 
+        tipo_seccion (economica|opinion|deportes|nacional|internacional) #REQUIRED>
+<!ATTLIST periodico id ID #REQUIRED
+        tipo_clase (nacional|internacional) #REQUIRED
+        fecha_publicacion CDATA #REQUIRED>
+<!ELEMENT revistas (revista+)>
+<!ELEMENT revista (titulo, numero, indice, secciones)>
+<!ATTLIST revista id ID #REQUIRED
+        tipo_clase (informatica|corazon|coches|investigacion|otras) #REQUIRED
+        numero_paginas CDATA #REQUIRED>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT secciones (seccion+)>
+<!ELEMENT seccion (contenido)>
+<!ATTLIST seccion id ID #REQUIRED
+        numero_paginas CDATA #REQUIRED>

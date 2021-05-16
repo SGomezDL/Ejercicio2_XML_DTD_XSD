@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE biblioteca SYSTEM "biblioteca1.dtd">
+<biblioteca>
+    <libros>
+        <libro id="L0000" numero_paginas="1345" tipo_clase="novela">
+            <titulo>Don Quijote de la Mancha</titulo>    
+            <capitulos>
+                <capitulo id="L10001" numero_paginas="12">
+                    <titulo>En un lugar de la Mancha</titulo>
+                    <contenido enlace=""></contenido>
+                </capitulo>
+                <capitulo id="L1002" numero_paginas="8">
+                    <titulo>Don Quijote es armado caballero</titulo>
+                    <contenido enlace=""></contenido>
+                </capitulo>
+                <capitulo id="L1003" numero_paginas="11">
+                    <titulo>Arden los libros de caballerias</titulo>
+                    <contenido enlace=""></contenido>
+                </capitulo>
+            </capitulos>
+            <indice></indice>
+            <sinopsis></sinopsis>
+        </libro>
+    </libros>
+    <periodicos>
+        <periodico id="P0000" fecha_publicacion="15/05/2021" tipo_clase="nacional">
+                <secciones_periodico>
+                    <seccion_periodico id="P1001" numero_paginas="18" tipo_seccion="economica">
+                        <contenido enlace=""></contenido>
+                    </seccion_periodico>
+                    <seccion_periodico id="P1002" numero_paginas="11" tipo_seccion="opinion">
+                        <contenido enlace=""></contenido>
+                    </seccion_periodico>
+                    <seccion_periodico id="P1003" numero_paginas="9" tipo_seccion="deportes">
+                        <contenido enlace=""></contenido>
+                    </seccion_periodico>
+                </secciones_periodico>
+                <indice></indice>
+            </periodico>
+    </periodicos>
+    <revistas>
+        <revista id="R0000" numero_paginas="62" tipo_clase="coches">
+            <titulo>Autobild</titulo>    
+            <numero>2</numero>
+            <indice></indice>
+            <secciones>
+                <seccion id="R1001" numero_paginas="5">
+                    <contenido enlace=""></contenido>
+                </seccion>
+                <seccion id="R1002" numero_paginas="8">
+                    <contenido enlace=""></contenido>
+                </seccion>
+                    <seccion id="R1003" numero_paginas="4">
+                    <contenido enlace=""></contenido>
+                </seccion>
+            </secciones>
+        </revista>
+    </revistas>
+</biblioteca>
